@@ -37,9 +37,6 @@ jobs:
       - image: cimg/node:13.8.0
     steps:
       - checkout
-      - restore_cache:
-         keys:
-           - "nimeiva-CI"
       - run:
          command: npm audit
 
